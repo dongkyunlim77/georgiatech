@@ -1,0 +1,36 @@
+{
+    // Use IntelliSense to learn about possible attributes.
+    // Hover to view descriptions of existing attributes.
+    // For more information, visit: https://go.microsoft.com/fwlink/?linkid=830387
+    "version": "0.2.0",
+    "configurations": [
+        {
+            "name": "Part 1",
+            "type": "python",
+            "request": "launch",
+            "program": "${workspaceFolder}/part1.py",
+            "console": "internalConsole"
+        },
+        {
+            "name": "Part 2",
+            "type": "python",
+            "request": "launch",
+            "program": "${workspaceFolder}/part2.py",
+            "console": "internalConsole"
+        },
+        {
+            "name": "Part 3",
+            "type": "python",
+            "request": "launch",
+            "program": "${workspaceFolder}/part3.py",
+            "console": "internalConsole"
+        },
+        {
+            "name": "Part 4",
+            "type": "python",
+            "request": "launch",
+            "program": "${workspaceFolder}/part4.py",
+            "console": "internalConsole"
+        },
+    ]
+}

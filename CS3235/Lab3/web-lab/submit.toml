@@ -1,0 +1,11 @@
+[part-1]
+task-1 = "https://www.mozilla.org/en-US/privacy/firefox/"
+
+[part-2]
+task-2 = "The Page Inspector is REALLY helpful!"
+task-3 = "file:///workspaces/lab3/task3.html"
+task-4.value = "cs3235"
+task-4.path = "/workspaces/lab3"
+task-4.httponly = "false"
+task-4.secure = "false"
+task-4.samesite = "None"

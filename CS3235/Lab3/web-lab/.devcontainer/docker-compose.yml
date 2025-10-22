@@ -1,0 +1,23 @@
+services:
+    firefox:
+        image: gtinfosec/firefox
+        restart: always
+        # Allocate sufficient memory to the Firefox GUI process.
+        # If your machine is running out of memory, you might try decreasing this,
+        # though Firefox may run into instability if you do so.
+        shm_size: 2g
+        # Access browser via http://localhost:4235 in your browser,
+        # or by vnc://localhost:4236 in a VNC client.
+        ports:
+            - 3235:5800
+            - 3236:5900
+        volumes:
+            - ..:/workspaces/lab3
+            - ./prefs.js:/config/.ffprofile/prefs.js
+            - ./mozilla.cfg:/opt/firefox/mozilla.cfg
+    stealer:
+        build: .
+        volumes:
+            - ..:/workspaces/lab3
+        # Prevent container from instantly exiting, allowing us to attach terminal
+        command: /bin/sh -c "sleep infinity"
